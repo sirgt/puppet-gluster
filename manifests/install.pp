@@ -23,19 +23,19 @@ class glusterfs::install($is_server) {
 
 	if $is_server == true {
 		$glusterFsPackages = 
-		[ 
+			[ 
 			"xfsprogs",
-            "glusterfs-server",
-            "glusterfs-vim",
-            "glusterfs-fuse",
-        ]	
+            		"glusterfs-server",
+            		"glusterfs-vim",
+            		"glusterfs-fuse",
+        		]	
 	} else {
 		$glusterFsPackages = 
-		[ 
-            "glusterfs",
-            "glusterfs-fuse",
-            "glusterfs-rdma",
-        ]
+			[ 
+            		"glusterfs",
+            		"glusterfs-fuse",
+            		"glusterfs-rdma",
+        	]
 	}
 
 	
