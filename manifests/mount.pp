@@ -9,7 +9,7 @@ class glusterfs::mount($is_server) {
 		}
 
 		exec { 'mount_volume':
-			command		=> "mount -t glusterfs 10.41.6.170:/gv0 $sandocs",
+			command		=> "mount -t glusterfs 10.0.0.2:/gv0 $sandocs",
 			path		=> '/bin',
 			require		=> [ File [ "$sandocs" ], Class["glusterfs::install"] ],
 		}
