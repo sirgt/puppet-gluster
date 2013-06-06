@@ -35,7 +35,7 @@ class glusterfs::install($is_server) {
             		"glusterfs",
             		"glusterfs-fuse",
             		"glusterfs-rdma",
-        	]
+        		]
 	}
 
 	
