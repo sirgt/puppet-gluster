@@ -17,4 +17,5 @@ Server (on every brick you, for now only supports 3 bricks)
     } 
 
 To mount the volume 
+
     class {'glusterfs': }
